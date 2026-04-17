@@ -1,13 +1,13 @@
 services:
   backend:
-    image: zaifi07/blogvista-backend-for-jenkins:1.1
+    image: zaifi07/blogvista-backend-for-jenkins:1.11
     container_name: backend-for-jenkins
     ports:
       - "5003:5003"
     restart: unless-stopped
 
   frontend:
-    image: zaifi07/frontend-for-jenkins:1.1
+    image: zaifi07/frontend-for-jenkins:1.11
     container_name: frontend-for-jenkins
     ports:
       - "3003:80"
